@@ -4,7 +4,7 @@ var static = require('node-static');
 /* Include the http server library */
 var http = require('http');
 
-/*Assume that we are running on Heroku */
+/* Assume that we are running on Heroku */
 var port = process.env.PORT;
 var directory = __dirnmae = '/public';
 
