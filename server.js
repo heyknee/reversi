@@ -1,4 +1,4 @@
-/* INclude the static file webserver library */
+/* Include the static file webserver library */
 var static = require('node-static');
 
 /* Include the http server library */
