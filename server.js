@@ -17,7 +17,7 @@ if(typeof port == 'undefined' || !port) {
 /* Set up a static web-serve that will deliver files from the filesystem */
 var file = new static.Server(directory);
 
-/* construct an http server that gets files from the file server*/
+/* construct an http server that gets files from the file server */
 var app = http.createServer(
     function(request,response){
         request.addListener('end',
@@ -29,5 +29,4 @@ var app = http.createServer(
 ).listen(port);
 
 console.log('The server is running');
-console.log(‘The directory’ + directory);
 
