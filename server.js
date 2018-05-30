@@ -38,10 +38,13 @@ console.log('The server is running');
 
 /*********************************************/
 /*        Set up the web socket server     */
+/* A registry of socket_ids and player informationa */
+var players = [];
 
 var io = require('socket.io').listen(app);
 
 io.sockets.on('connection',function(socket) {
+    log('Client connection by '+socket.id);
 
 	function log(){
 		var array = ['*** Server Log Message: '];
@@ -51,12 +54,7 @@ io.sockets.on('connection',function(socket) {
 		}
 		socket.emit('log',array);
 		socket.broadcast.emit('log',array);
-	}
-	log('A web site connected to the server');
-
-	socket.on('disconnect',function(socket){
-			log('A web site disconnected to the server');
-    });
+    }
     
     /* join_room command */
     /* payload:
@@ -135,6 +133,11 @@ io.sockets.on('connection',function(socket) {
         io.sockets.in(room).emit('join_room_response',success_data);
         log('Room ' + room + ' was just joined by '+ username);
 });
+
+socket.on('disconnect',function(socket){
+    log('A web site disconnected to the server');
+});
+
 /* send_message command */
     /* payload:
     {
