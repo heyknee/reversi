@@ -60,7 +60,7 @@ if (payload.socket_id == socket.id){
    nodeB.addClass('col-9 text-right');
     nodeB.append('<h4>' + payload.username + '</h4>');
 
-   nodeC.addClass('cold-3 text-left');
+   nodeC.addClass('col-3 text-left');
     var buttonC = makeInviteButton(payload.socket_id);
     nodeC.append(buttonC);
 
