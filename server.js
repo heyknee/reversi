@@ -143,7 +143,7 @@ socket.join(room);
             var success_data = {
                 result: 'success',
                 room: room,
-                username: players[socket_in_room].room,
+                username: players[socket_in_room].username,
                 socket_id: socket_in_room,
                 membership: numClients
 };
