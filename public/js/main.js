@@ -311,9 +311,11 @@ socket.on('game_update',function(payload){
 
   if (socket.id === payload.game.player_white.socket) {
     my_color = 'white';
+    my_opponent = payload.game.player_black.username;
   }
   else if (socket.id === payload.game.player_black.socket) {
     my_color = 'black';
+    my_opponent = payload.game.player_white.username
   }
   else {
     // something weird is going on, like three people playing at once
@@ -328,6 +330,7 @@ socket.on('game_update',function(payload){
   clearInterval(interval_timer);
 interval_timer = setInterval(function(last_time){
   return function(){
+
     // Do the work of updating the UI
     var d = new Date();
     var elapsedmilli = d.getTime() - last_time;
@@ -363,7 +366,8 @@ interval_timer = setInterval(function(last_time){
   var row,column;
   for(row = 0; row < 8; row++){
     for(column = 0; column < 8; column++){
-      /* If a board space has changed */
+
+ /* If a board space has changed */
       if(old_board[row][column] !=board [row][column]){
  if (old_board[row][column] === '?' && board[row][column] === ' ') {
 					$('#'+row+'_'+column).html('<img src="assets/images/empty.gif" alt="empty square"/>');

@@ -6,9 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
   <style>
-    #header-row {
-      background-image: url("assets/images/green.png");
-    }
+ nav {
+  clear: both;
+  color: #000;
+  background-color: #fff;
+  height: 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 120px;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    display: inline;
+    background-color: #fff;
+}
+
+nav li {
+  display:inline;
+  margin-right: 40px;
+}
+
+nav li a {
+    display: inline;
+    color: rgb(76, 95, 75);
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+nav li, .a:hover, nav li a.current {
+    background-color: #fff;
+    color: rgb(76, 95, 75);
+}
   </style>
 
     <!-- Bootstrap CSS -->
@@ -16,31 +48,41 @@
 
     <title>About</title>
   </head>
-  <body>
+  <header>
+      <nav>
+        <ul>
+            <li class="current"><a href="index.html">Reversi</a>
+                <li><a href="about.html">About</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Reversi">Rules</a></li>
+              </ul>
+          </nav>
+    </header>
+
+<body style="background-color:#b6db85">
     <div class="container-fluid text-center">
       <div class="row" id="header-row">
         <div class="col">
           <h2>About</h2>
-        </div>
+              </div>
       </div>
 
       <div class="row">
         <div class="col">
-        <p>Lorem ipsum</p>
+        <p> This project was made using Sketch, Visual Studio, Github and Heroku. 
+            Inspired by Jon Yoblanski and <a href="https://lawsofux.com/">Laws of UX</a>.
         </div>
       </div>
 
-      <div class="row">
-        <div class="col">
-          <a href="index.html" class="btn btn-lg btn-info">Home</a>
-        </div>
 
-        <div class="col">
-          <a href="https://en.wikipedia.org/wiki/Reversi" class="btn btn-lg btn-info">Rules</a>
-        </div>
-      </div>
-
-    </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 565 564">
+        <circle cx="34" cy="34" r="34" fill="#000" fill-opacity=".2" data-svg-origin="34 34" transform="matrix(1,0,0,1,0,0)" style="opacity: 1;"></circle>
+        <circle cx="118" cy="34" r="34" fill="#000" fill-opacity=".2" data-svg-origin="118 34" transform="matrix(1,0,0,1,0,0)" style="opacity: 1;"></circle>
+        <circle cx="199" cy="34" r="34" fill="#000" fill-opacity=".2" data-svg-origin="199 34" transform="matrix(1,0,0,1,0,0)" style="opacity: 1;"></circle>
+        <circle cx="283" cy="34" r="34" fill="#000" fill-opacity=".2" data-svg-origin="283 34" transform="matrix(1,0,0,1,0,0)" style="opacity: 1;"></circle>
+        <circle cx="365" cy="34" r="34" fill="#000" fill-opacity=".2" data-svg-origin="365 34" transform="matrix(1,0,0,1,0,0)" style="opacity: 1;"></circle>
+        <circle cx="449" cy="34" r="34" fill="#000" fill-opacity=".2" data-svg-origin="449 34" transform="matrix(1,0,0,1,0,0)" style="opacity: 1;"></circle>
+        <circle cx="531" cy="34" r="34" fill="#000" fill-opacity=".2" data-svg-origin="531 34" transform="matrix(1,0,0,1,0,0)" style="opacity: 1;"></circle>
+ 
   
 
     <!-- Optional JavaScript -->

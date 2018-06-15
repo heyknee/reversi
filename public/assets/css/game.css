@@ -1,6 +1,13 @@
-body {
-	background-image: url("/assets/images/green.png");
-}
+
+
+.gradient {
+	background-image:
+	  linear-gradient(
+		to right, 
+		#90e0d1, 
+		white
+	  );
+  }
 
 table#game_board{
 	margin: auto;
@@ -28,4 +35,52 @@ table#game_board td {
 td.hovered_over:hover {
     background-image: url("../images/hover.gif");
     background-size: 100% 100%; background-color: transparent;
+}
+
+form.inline {
+	padding: 10px;
+}
+
+.emptyGif{
+    z-index: -1; position:relative;
+}
+
+.p{
+	padding: 10px;
+	margin: 20px;
+}
+
+.gradient {
+	background-image:
+	  linear-gradient(
+		to right, 
+		#90e0d1, 
+		white
+	  );
+  }
+
+  .btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+ 
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+ 
+.btn-primary {
+    background: #0099cc;
+    color: #ffffff;
+}
+ 
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #33a6cc;
+}
+ 
+.btn-primary:active, .btn-primary.active {
+    background: #007299;
+    box-shadow: none;
 }

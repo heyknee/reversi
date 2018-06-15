@@ -5,52 +5,166 @@
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
   
-  <style>
-   
-            </style>
+<!-- External Style Sheet -->
+<link rel='stylesheet' type='text/css' href='assets/css/index.css' />
+<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+
+
+<style>
+
+  .buttonwrapper {
+    text-align: center;
+    float: center;
+    top: 50%;
+    font-family: 'Work Sans', sans-serif;
+    padding: 10px;
+    width: 85px;
+	height: 85px;
+	background: #F4F1D0;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+        position: relative;
+    display: inline-block;
+    font-color: #000;
+}
+
+  .flipBtnWrapper {
+    width: 85px;
+	height: 85px;
+	background: #F4F1D0;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+        position: relative;
+    display: inline-block;
+      }
+       
+    .flipBtn,
+    .flipBtn_face {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+      }
+
+      .flipBtn_front {
+        background-color: #F4F1D0;
+        backface-visibility: hidden;
+        width: 85px;
+	height: 85px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+        transform:  translateZ( 10px );
+      }
+       
+      .flipBtn_back {
+        background-color: blue;
+        height: 85px;
+	background: rgb(98, 110, 92);
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+        transform:  translateZ( -10px );
+      }
+      
+      .flipBtn {
+        transition: transform 2s;
+        transform-style: preserve-3d;
+      }
+       
+      .flipBtnWrapper:hover .flipBtn {
+        transform: rotateX( -180deg);
+      }
+nav {
+  clear: both;
+  color: #000;
+  background-color: #fff;
+  height: 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 120px;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    display: inline;
+    background-color: #fff;
+}
+
+nav li {
+  display:inline;
+  margin-right: 40px;
+}
+
+nav li a {
+    display: inline;
+    color: rgb(76, 95, 75);
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+nav li, .a:hover, nav li a.current {
+    background-color: #fff;
+    color: rgb(76, 95, 75);
+}
+</style>
 
     <!-- Bootstrap CSS -->
     <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css' integrity='sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB' crossorigin='anonymous'>
+<style type="text/css">
 
+</style>
     <title>Play Reversi</title>
   </head>
-  <body>
+
+
+<body style="background-color:#b6db85">
+    <div class="wrapper">
+      
+<header>
+  <nav>
+    <ul>
+        <li class="current"><a href="index.html">Reversi</a>
+            <li><a href="about.html">About</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Reversi">Rules</a></li>
+          </ul>
+      </nav>
+</header>
+    
+<section class-"main"
     <div class='container-fluid text-center'>
-      <div class='row'>
-        <div class='col'>
-          <img class='img-fluid' src='assets/images/top-splash.png' alt='Reversi logo'/>
-        </div>
-      </div>
+       <svg viewBox="0 0 566 566" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd">
+         <path fill-opacity=".1" fill="#000" d="M0 0h566v566H0z" data-svg-origin="283 283" transform="matrix(1,0,0,1,0,0)" style="opacity: 1;"></path>
+        <path fill-opacity=".1" fill="#000" d="M40 40h486v486H40z" data-svg-origin="283 283" transform="matrix(1,0,0,1,0,0)" style="opacity: 1;"></path>
+        <path fill-opacity=".1" fill="#000" d="M80 80h406v406H80z" data-svg-origin="283 283" transform="matrix(1,0,0,1,0,0)" style="opacity: 1;"></path>
+        <circle fill-opacity=".2" fill="#000" cx="168" cy="168" r="48" data-svg-origin="168 168" transform="matrix(1,0,0,1,0,0)" style="opacity: 1;"></circle>
+        <circle fill-opacity=".2" fill="#000" cx="284" cy="168" r="48" data-svg-origin="284 168" transform="matrix(1,0,0,1,0,0)" style="opacity: 1;"></circle>
+        <circle fill-opacity=".2" fill="#000" cx="398" cy="168" r="48" data-svg-origin="398 168" transform="matrix(1,0,0,1,0,0)" style="opacity: 1;"></circle>
+        <circle fill-opacity=".2" fill="#000" cx="167.209" cy="282.437" r="47.247" data-svg-origin="167.20899963378906 282.43700408935547" transform="matrix(1,0,0,1,0,0)" style="opacity: 1;"></circle>
+       <a href='name.html'>
+         <circle  id="Oval-2" fill="#ffffff" cx="283.936" cy="282.437" r="47.247" data-svg-origin="283.93599700927734 282.43700408935547" transform="matrix(1,0,0,1,0,0)" style="opacity: 1;"></circle>
+         <text id="Play" font-family="WorkSans-ExtraLight, Work Sans" font-size="30" font-weight="300" fill="#1E1E1E">
+             <tspan x="258" y="291">Play</tspan>
+         </text>
+        </a>
+        <circle fill-opacity=".2" fill="#000" cx="398" cy="282" r="48" data-svg-origin="398 282" transform="matrix(1,0,0,1,0,0)" style="opacity: 1;"></circle>
+        <circle fill-opacity=".2" fill="#000" cx="168" cy="398" r="48" data-svg-origin="168 398" transform="matrix(1,0,0,1,0,0)" style="opacity: 1;"></circle>
+        <circle fill-opacity=".2" fill="#000" cx="284" cy="398" r="48" data-svg-origin="284 398" transform="matrix(1,0,0,1,0,0)" style="opacity: 1;"></circle>
+        <circle fill-opacity=".2" fill="#000" cx="398" cy="398" r="48" data-svg-origin="398 398" transform="matrix(1,0,0,1,0,0)" style="opacity: 1;"></circle>
+      </g>
+    </svg>
+  </div>
+</section>
 
-      <div class='row'>
-        <div class='col'>
-          <a href='name.html' class='btn btn-lg btn-secondary'>Let's Play</a>
-        </div>
-      </div>
-
-      <div class='row'>
-        <div class='col'>
-          <img class='img-fluid' src='assets/images/bottom-splash.png' alt='Reversi logo 2' />
-        </div>
-      </div>
-
-      <div class='row'>
-        <div class='col'>
-          <a href='about.html' class='btn btn-lg btn-info'>About</a>
-        </div>
-
-        <div class='col'>
-          <a href='https://en.wikipedia.org/wiki/Reversi' class='btn btn-lg btn-info'>Rules</a>
-        </div>
-      </div>
-
-    </div>
-  
-
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js' integrity='sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49' crossorigin='anonymous'></script>
     <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js' integrity='sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T' crossorigin='anonymous'></script>
+
+  </div> <!-- .wrapper-->
   </body>
 </html>

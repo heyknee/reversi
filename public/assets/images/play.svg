@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="509px" height="510px" viewBox="0 0 509 510" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval-2" fill="#F4F1D0" cx="252.5" cy="252.5" r="252.5"></circle>
+        <text id="Play" font-family="WorkSans-ExtraLight, Work Sans" font-size="200" font-weight="300" fill="#1E1E1E">
+            <tspan x="69" y="303">Play</tspan>
+        </text>
+    </g>
+</svg>

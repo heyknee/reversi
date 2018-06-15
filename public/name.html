@@ -8,11 +8,75 @@
 
     <!-- Internal Style Sheet -->
     <style>
-        body{
-          background-image: url(assets/images/blueBackground.jpg);
-            }
+       nav {
+  clear: both;
+  color: #000;
+  background-color: #fff;
+  height: 30px;
+}
 
-  </style>
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 120px;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    display: inline;
+    background-color: #fff;
+}
+
+nav li {
+  display:inline;
+  margin-right: 40px;
+}
+
+nav li a {
+    display: inline;
+    color: rgb(76, 95, 75);
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+nav li, .a:hover, nav li a.current {
+    background-color: #fff;
+    color: rgb(76, 95, 75);
+}
+
+h2 {
+  margin: 0px;
+    padding: 0px;
+    width: 300px;
+    text-align: left;
+    color: white;
+    font: 300; 
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+.btn, .btn-primary {
+    color: #fff;
+    background-color: #667e48;
+    border-color: #667e48;
+}
+      </style>
+      
+<body style="background-color:#b6db85">
+    <div class="wrapper">
+      
+        <header>
+            <nav>
+              <ul>
+                  <li class="current"><a href="index.html">Reversi</a>
+                      <li><a href="about.html">About</a></li>
+                      <li><a href="https://en.wikipedia.org/wiki/Reversi">Rules</a></li>
+                    </ul>
+                </nav>
+          </header>
 
     <script>
     function submitForm(){
