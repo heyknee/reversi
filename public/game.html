@@ -50,6 +50,15 @@ nav li, .a:hover, nav li a.current {
     color: rgb(76, 95, 75);
 }
 
+.subhead {
+  margin: 0px;
+    padding: 20px 0px 20px 0px;
+    text-align: left;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 100;
+}
+
         </style>
 
   <!-- Bootstrap CSS -->
@@ -189,7 +198,7 @@ nav li, .a:hover, nav li a.current {
 
 <div class='row'>
   <div class='col text-center'>
-    <h3> Messages </h3>
+    <h3 class="subhead"> Chat </h3>
     <form class ='form-inline'  onsubmit='send_message(); return false;'>
         <label for 'send_message_holder' class='col-form-label sr-only'>Enter your chat message</label>
         <input class='form-control mx-auto w-75' type='text' value='' id='send_message_holder' placeholder='enter your chat message' />
